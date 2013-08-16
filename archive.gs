@@ -1,8 +1,17 @@
+/*
+* Archive.gs
+*
+* Used to take functions from the roster and
+* send them to the archive. Needed so that the
+* roster does not get too lengthy and slow, but
+* keeps data for archiving reasons.
+*/
+
 function archive() {
-  var ss=SpreadsheetApp.openById("0AroBvchobu2edGZDZ3JPcVI3OEJXUGJ0X25HX1hTT0E");
+  var ss=SpreadsheetApp.openById("[ROSTER SPREADSHEET ID]");
   var s=ss.getSheetByName("roster");
   
-  var targetSs=SpreadsheetApp.openById("0AroBvchobu2edHNXQ3ZUQjI5TWJtWWZwa1UtcExPNnc");
+  var targetSs=SpreadsheetApp.openById("[ARCHIVE SPREADSHEET ID]");
   var targetS=targetSs.getSheetByName("Sheet1");
   
   var length=s.getLastRow();
