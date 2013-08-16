@@ -1,9 +1,7 @@
-/* AutoSort function, used to sort data for sheet
-*  entitled "Job Roster". Checks if the edited
+/* AutoSort function, used to sort data for sheets
+*  entitled "Job Roster" and "Job Archive". Checks if the edited
 *  cell was int he sorted column, and if it is, it
 *  sorts that column into the list.
-*
-*  Created by: Parker Case for JC Jewelers
 */
 
 function onEdit(event) {
